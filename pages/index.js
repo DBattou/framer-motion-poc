@@ -39,7 +39,7 @@ const Index = (props) => {
     <motion.div initial="initial" animate="animate" exit={{ opacity: 0 }}>
       <div className="container center">
         <motion.div animate={{ opacity: 1 }} initial={{ opacity: 0 }} className="title">
-          <h1>Select a protein</h1>
+          <h1>Select a product</h1>
         </motion.div>
         <motion.div variants={stagger} className="product-row">
           {props.products.map((product) => (
