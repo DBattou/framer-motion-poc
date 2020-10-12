@@ -29,8 +29,6 @@ const fadeInUp = {
 }
 
 const Product = ({ productData }) => {
-  console.log(productData)
-
   return (
     <motion.div initial="initial" animate="animate" exit={{ opacity: 0 }}>
       <div className="fullscreen">
