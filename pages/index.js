@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { getSortedProductsData } from '../lib/products'
 
 // Our custom easing
 let easing = [0.6, -0.05, 0.01, 0.99]
@@ -49,7 +50,7 @@ const Index = (props) => {
                 whileTap={{ scale: 0.95 }}
                 className="card"
               >
-                <span className="category">Protein</span>
+                <span className="category">{product.name}</span>
                 <motion.img
                   initial={{ x: 60, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
@@ -71,9 +72,11 @@ const Index = (props) => {
   )
 }
 export async function getStaticProps() {
+  const products = getSortedProductsData()
+
   return {
     props: {
-      products: [{ id: 'coucou' }],
+      products,
     },
   }
 }

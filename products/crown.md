@@ -1,6 +1,7 @@
 ---
-title: 'Shiny Crow'
-imageUrl: './crown.png'
+name: 'Shiny Crow'
+image: './crown.png'
+price: '56.43'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
